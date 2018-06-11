@@ -1,0 +1,13 @@
+{
+  "name": "WiTFirstCut",
+  "version": "1.0.0",
+  "description": "Women In Technology",
+  "main": "default.html",
+  "scripts": {
+    "start": "http-server -a localhost -p 8000 -c-1",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

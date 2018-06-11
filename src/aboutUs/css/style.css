@@ -1,0 +1,22 @@
+.selector-for-some-widget {
+    box-sizing: content-box;
+}
+
+.table>tr>td {
+    border-top: 0 !important;
+}
+
+.profilePicture {
+    width: 100px;
+    height: 100px;
+}
+
+.content-text-box {
+    border: 20px solid #eee;
+    padding: 10px;
+}
+
+div.row>div>img {
+    max-width: 160px;
+    max-height: 70px;
+}

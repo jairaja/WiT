@@ -1,0 +1,79 @@
+
+#left{display: inline-block; *display: inline; zoom: 1; vertical-align: top; font-size: 12px;max-height: 183px;width: 25%;}
+.imgRepeat{background: url('../img/nwmHeader.jpg') repeat;}
+.thumbnail {position: relative;}
+.caption {position: absolute;top: 25%;left: 0;width: 100%;}
+.headText{font-weight: bold;color: white;font-size:40px;margin-bottom: 1px;}
+.tabs-left {
+  border-bottom: none;
+  padding-top: 2px;
+}
+.tabs-left {
+  border-right: 1px solid #ddd;
+}
+.tabs-left>li {
+  float: none;
+  margin-bottom: 2px;
+  outline: none;
+}
+.tabs-left>li {
+  margin-right: -1px;
+}
+.tabs-left>li.active>a,
+.tabs-left>li.active>a:hover,
+.tabs-left>li.active>a:focus {
+  border-bottom-color: #ddd;
+  border-right-color: transparent;
+  color: #ad1982;
+  font-family: sans-serif;
+}
+.tabs-left>li>a {
+  border-radius: 4px 0 0 4px;
+  margin-right: 0;
+  display:block;
+  color: #ad1982;
+  font-family: sans-serif;
+}
+.footerAnch{
+  color: white;
+  font-size: 14px;
+  font-family: sans-serif;
+  margin-left: 10px;
+  text-decoration: none;
+}
+.col-md-10>.row>a:hover,
+.col-md-10>.row>a:focus{
+  color: white;
+  font-size: 14px;
+  font-family: sans-serif;
+  text-decoration: none;
+}
+
+/*.roadmapText {
+  position: relative;
+  margin-left: 0px;
+  margin-right: 5px;
+  width: auto;
+  height: auto;
+  padding: 5px;
+  text-align: center;
+  background-color: #fff;
+  border: 8px solid #666;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  border-radius: 30px;
+  -webkit-box-shadow: 2px 2px 4px #888;
+  -moz-box-shadow: 2px 2px 4px #888;
+  box-shadow: 2px 2px 4px #888;
+}*/
+
+.roadMapHeadings{
+  padding: 3px;
+  margin-left: 15px;
+  background-color: #42145f;
+  color: white;
+}
+
+.reoadMapText{
+  font-family: sans-serif;
+}

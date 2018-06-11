@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<script>
+  function clickAlert(val) {
+    //alert("Alert! val is : "+val);
+	document.getElementById(val.split(",")[0]).style.display='none'
+	document.getElementById(val.split(",")[1]).style.display='block'
+}
+</script>
+
+<style>
+body {font-family: Arial, Helvetica, sans-serif;}
+
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+
+input[type=submit] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-left: 40%;
+}
+
+input[type=button] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-left: 40%;
+}
+
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+
+.container {
+    border-radius: 5px;
+    background-color: #E0F2F7;
+    padding: 20px;
+    width: 40%;
+    margin-left: 25%;
+    margin-top: 6%;
+    height: 80%;
+}
+</style>
+
+
+</head>
+<body>
+
+	<div style="width: 100%;height: 30%;float: left;background-color:;">
+			<div style="width: 50%;float: left;height: 100%;">
+				<div style="width: 100%;float: left; margin-top: 3%; margin-left: 6%">
+					<img alt="" src="images/DnI.JPG" height="110" width="230">
+				</div>
+				<div style="width:100%; float: left;">
+					<div style="margin-left: 21%; font-family: sans-serif; color: #7f8c8d">
+						Diversity And Inclusion
+					</div>
+				</div>
+			</div>
+			<div style="width: 50%;float: left;height: 100%;">
+				<div style="width: 100%;float: left;">
+					<div style="margin-top: 2%;float: left;">
+						<img alt="" src="images/WomenSTEM.jpg" height="70" width="200">
+					</div>
+					<div style="margin-left: 20%;float: left;">
+						<img alt="" src="images/WomenSTEM_2.jpg" height="100" width="200">
+					</div>
+				</div>
+			</div>
+	</div>
+
+	<div style="width: 100%;height: 10%;float: left;margin-top: 2%; background-color:; margin-left:;">
+		<div style="width: 20%;height: 10%;float: left;margin-top:; background-color:; margin-left: 5%">
+			<h3 style="font-size: medium; color: red;">Contact Us</h3>
+		</div>
+		<div style="width: 50%;height: 10%;float: right;margin-top:; background-color:; margin-right:;">
+			<a href="index.html"><h3 style="font-size: medium; color: red; text-align:right;margin-right:25%;">Home</h3></a>
+		</div>
+	</div>
+
+	<div id="contactform" style="width: 100%;height: 100%;float: left; background-color:; display: block;">
+		<div style="width: 80%;height: 10%;float: left; background-color:; margin-top: .5%; 
+			margin-left: 10%; font-size:large; font-family:New Century Schoolbook; text-align:center;">
+		Thank you for expressing an interest in WomenInTech. Please complete
+		the form below to find out more about the opportunities for corporate
+		partnership, sponsorship and membership.
+		</div>
+		
+		<div class="container">
+			<form action=""> <!-- CHANGE/USE THIS WHILE SAVING THIS DATA -->
+				
+				<label for="fname">First Name: </label> 
+					<input type="text" id="fname" name="firstname" placeholder="Your name.." required="required"> 
+				
+				<label for="lname">Last Name:</label> 
+					<input type="text" id="lname" name="lastname" placeholder="Your last name.."> 
+				
+				<label for="email">E-Mail:</label> 
+					<input type="text" id="email" name="emailid" placeholder="Your e-mail..">
+				
+				<label for="phone">Phone Number:</label>
+					<input type="text" id="phone" name="phonenumber" placeholder="Your phone number.." pattern="[0-9]">
+				
+				<label for="company">Company name:</label>
+					<input type="text" id="company" name="companyname" placeholder="Your company name..">
+				
+				<label for="message">Your Message/Query:</label>
+					<textarea id="message" name="message" placeholder="Message/Query.." style="height: 200px"></textarea>
+					
+				<!-- <input type="submit" value="Submit" > --> <!-- CHANGE THIS WHILE SAVING THIS DATA -->
+				<input type="button" onclick="clickAlert('contactform,showmessage');return false;" value="Submit">
+				
+			</form>
+		</div>
+	</div>
+	
+	<div id="showmessage" style="width: 50%; height: 100%; float: left; display: none;">
+		<div style="width: 80%;height: 10%;float: left; background-color:; margin-top: .5%; 
+			margin-left: 10%; font-size:large; font-family:New Century Schoolbook; text-align:center;">
+		Thank you for the information. Will connect with you shortly.
+		</div>
+	</div>
+	
+</body>
+</html>
